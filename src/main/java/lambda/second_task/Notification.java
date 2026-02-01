@@ -1,4 +1,4 @@
-package second_task;
+package lambda.second_task;
 
 import lombok.Builder;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package second_task;
+package lambda.second_task;
 
 public enum SignatureType {
     FOR_PC,
