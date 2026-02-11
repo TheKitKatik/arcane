@@ -14,7 +14,7 @@ public class GriffinsFoodDelivery {
         String[] characterNames = {"Peter", "Lois", "Meg", "Chris", "Stewie"};
 
         Arrays.stream(characterNames).forEach(character -> {
-            threadPool.execute(() -> new FoodDeliveryTask(character, random.nextInt(0, 30)).run());
+            threadPool.execute(new FoodDeliveryTask(character, random.nextInt(0, 30)));
         });
 
         threadPool.shutdown();
